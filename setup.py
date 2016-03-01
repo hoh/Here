@@ -16,15 +16,15 @@
 
 from setuptools import setup
 
-setup(name='Here',
-      version='0.1',
+setup(name='hereby',
+      version='0.2',
       description='Small Python library for accessing files in the same folder as your code',
       #long_description=open('README.rst').read(),
       author='Hugo Herter',
       author_email='@hugoherter.com',
       url='https://github.com/hoh/Here/',
-      py_modules=['here'],
-      scripts=['here.py'],
+      py_modules=['hereby'],
+      scripts=['hereby.py'],
       license='AGPLv3',
       keywords="open relative module file template",
       classifiers=['Development Status :: 3 - Alpha',
