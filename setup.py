@@ -17,7 +17,7 @@
 from setuptools import setup
 
 setup(name='hereby',
-      version='0.3.0',
+      version='0.3.1',
       description='Small Python library for accessing files in the same folder as your code',
       #long_description=open('README.rst').read(),
       author='Hugo Herter',
