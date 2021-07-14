@@ -32,8 +32,11 @@ class Here(object):
 
     def open(self, path, mode='r', *args, **kwargs):
         """Proxy to function `open` with path to the current file."""
-        return open(os.path.join(os.path.dirname(self.path), path),
-                    mode=mode, *args, **kwargs)
+        return open(self.abspath(path), mode=mode, *args, **kwargs)
+
+    def exists(self, path):
+        """Proxy to function `isfile` with path to the current file."""
+        return os.path.isfile(self.abspath(path))
 
     def abspath(self, path):
         """Return absolute path for a path relative to the current file."""
